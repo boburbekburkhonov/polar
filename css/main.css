@@ -1,0 +1,812 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Medium.woff2') format('woff2'),
+    url('../fonts/Roboto-Medium.woff') format('woff'),
+    url('../fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hind Madurai';
+    src: url('../fonts/HindMadurai-Regular.woff2') format('woff2'),
+    url('../fonts/HindMadurai-Regular.woff') format('woff'),
+    url('../fonts/HindMadurai-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hind Madurai';
+    src: url('../fonts/HindMadurai-SemiBold.woff2') format('woff2'),
+    url('../fonts/HindMadurai-SemiBold.woff') format('woff'),
+    url('../fonts/HindMadurai-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hind Madurai';
+    src: url('../fonts/HindMadurai-Bold.woff2') format('woff2'),
+    url('../fonts/HindMadurai-Bold.woff') format('woff'),
+    url('../fonts/HindMadurai-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hind Madurai';
+    src: url('../fonts/HindMadurai-Medium.woff2') format('woff2'),
+    url('../fonts/HindMadurai-Medium.woff') format('woff'),
+    url('../fonts/HindMadurai-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+    url('../fonts/Roboto-Regular.woff') format('woff'),
+    url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fredoka One';
+    src: url('../fonts/FredokaOne-Regular.woff2') format('woff2'),
+    url('../fonts/FredokaOne-Regular.woff') format('woff'),
+    url('../fonts/FredokaOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Hind Madurai', 'Fredoka One', sans-serif;
+}
+
+img {
+    display: inline-block;
+}
+.container {
+    width: 1165px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.site-btn {
+    display: inline-block;
+    padding: 14px 50px;
+    text-decoration: none;
+    background: #D23166;
+    border-radius: 5px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #FAFAFA;
+}
+
+.site-btn:hover {
+    opacity: 0.8;
+}
+
+.site-btn:active {
+    opacity: 0.4;
+}
+
+/* HEADER */
+
+.header {
+    padding-top: 10px;
+    background-color: #FCF1F4;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo-link:hover {
+    opacity: 0.8;
+}
+
+.header-logo-link:active {
+    opacity: 0.4;
+}
+
+/* HEADER-NAVIGATION */
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.header-nav-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header-nav-item + .header-nav-item {
+    margin-left: 40px;
+}
+
+.header-nav-link {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 16px;
+    color: #150101;
+    opacity: 0.6;
+}
+
+.header-nav-link-active {
+    color: #D23166;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.header-nav-link:hover {
+    opacity: 0.8;
+}
+
+.header-nav-link:active {
+    opacity: 0.4;
+}
+
+.header-btn {
+    margin-left: 172px;
+}
+
+/* MAIN */
+
+/* HERO-SECTION */
+
+.hero {
+    padding-top: 150px;
+    padding-bottom: 139px;
+    background-color: #FCF1F4;
+    background-image: url('../images/icecream.png');
+    background-size: 870px 700px;
+    background-repeat: no-repeat;
+    background-position: calc(50% + 320px);
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-desc-top {
+    margin: 0;
+    margin-bottom: 6px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    color: #0F0101;
+}
+
+.hero-heading {
+    margin: 0;
+    margin-bottom: 35px;
+    font-family: 'Fredoka One';
+    font-weight: 400;
+    width: 660px;
+    font-size: 57.33px;
+    line-height: 120.5%;
+    color: #0F0101;
+    opacity: 0.9;
+}
+
+.hero-heading-span {
+    color: #D23166;
+}
+
+.hero-desc-bottom {
+    width: 523px;
+    margin: 0;
+    margin-bottom: 50px;
+    opacity: 0.6;
+    font-family: 'Hind Madurai';
+    font-size: 18px;
+    line-height: 27px;
+    color: #0F0101;
+}
+
+.hero-img {
+    margin-left: -192px;
+}
+
+/* SERVICES-SECTION */
+
+.services {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.services-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.services-item {
+    padding: 29px 26px;
+    width: 250px;
+    background: #ffffff;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.03);
+    border-radius: 7px;
+}
+
+.services-item + .services-item {
+    margin-left: 39px;
+}
+
+.services-img {
+    margin-left: 66px;
+    margin-bottom: 25px;
+}
+
+.services-desc-top {
+    margin: 0;
+    margin-bottom: 9px;
+    text-align: center;
+    font-family: 'Hind Madurai';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000000;
+    width: 161px;
+}
+
+.services-desc-bottom {
+    margin: 0;
+    font-family: 'Hind Madurai';
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #000000;
+    opacity: 0.6;
+    width: 198px;
+}
+
+.services-item:hover {
+    opacity: 0.8;
+}
+
+.services-item:active {
+    opacity: 0.4;
+}
+
+/* SUGAR-SECTION */
+
+.sugar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #FCF1F4;
+}
+
+.sugar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sugar-heading {
+    margin: 0;
+    margin-bottom: 16px;
+    width: 349px;
+    font-family: 'Hind Madurai';
+    font-weight: 600;
+    font-size: 44.2px;
+    line-height: 49px;
+    color: #150101;
+}
+
+.sugar-desc {
+    margin: 0;
+    margin-bottom: 35px;
+    width: 442px;
+    line-height: 24px;
+    color: #150101;
+    opacity: 0.6;
+}
+
+.sugar-img {
+    margin-left: 70px;
+}
+
+/* PRODUCTS-SECTION */
+
+.products {
+    padding-top: 137px;
+    padding-bottom: 149px;
+}
+
+.products-container {
+    width: 1200px;
+}
+
+.products-top-heading {
+    margin: 0;
+    margin-bottom: 64px;
+    text-align: center;
+    font-family: 'Hind Madurai';
+    font-weight: 600;
+    font-size: 44.2px;
+    line-height: 61px;
+    color: #150101;
+}
+
+.products-top-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.products-top-item + .products-top-item {
+    margin-left: 40px;
+}
+
+.products-top-link {
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    opacity: 0.6;
+}
+
+.products-top-link:hover {
+    color: #000000;
+    opacity: 1;
+}
+
+.products-top-link:active {
+    border-bottom: 4px solid #D64374;
+    opacity: 0.2;
+}
+
+/* PRODUCTS-MENU */
+
+.products-menu-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.products-menu-item {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.products-menu-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.products-menu-info-second {
+    text-align: end;
+}
+
+.products-menu-info {
+    margin-left: 30px;
+    width: 454px;
+}
+
+.products-menu-info-heading {
+    margin: 0;
+    margin-bottom: 11px;
+    font-family: 'Hind Madurai';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.products-menu-info-desc {
+    margin: 0;
+    margin-bottom: 28px;
+    line-height: 24px;
+    color: #000000;
+    opacity: 0.7;
+}
+
+.products-menu-info-newprice {
+    display: inline-block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-family: 'Hind Madurai';
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.products-menu-info-oldprice {
+    margin-left: 5px;
+    font-family: 'Hind Madurai';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000000;
+    opacity: 0.7;
+}
+
+.products-menu-info-link {
+    display: inline-block;
+    width: 165px;
+}
+
+/* PRODUCTS-MENU-INNER-LIST */
+
+.products-menu-inner-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.products-menu-info-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 46px;
+}
+
+.products-menu-desc-wrapper {
+    margin-left: 11px;
+}
+
+.products-menu-name-desc {
+    margin: 0;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+.products-menu-live-desc {
+    margin: 0;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+    opacity: 0.7;
+}
+.products-menu-info-blockquote {
+    margin-bottom: 37px;
+    line-height: 24px;
+    color: #000000;
+    opacity: 0.7;
+    width: 332px;
+}
+
+.products-menu-info-blockquote::before {
+    content: "";
+    display: inline-block;
+    width: 11px;
+    height: 10px;
+    background-image: url(../images/left-q.png);
+    margin-right: 10px;
+}
+
+.products-menu-info-blockquote::after {
+    content: "";
+    display: inline-block;
+    width: 11px;
+    height: 10px;
+    background-image: url(../images/right-q.png);
+    margin-left: 10px;
+}
+
+.products-menu-inner-item-active {
+    display: flex;
+    align-items: center;
+}
+
+.products-menu-inner-img {
+    margin-left: 26px;
+}
+
+/* SIMPLEWAY-SECTION */
+
+.simpleway {
+    background-color: #F8EDF0;
+}
+
+.simpleway-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.simpleway-img {
+    position: relative;
+    top: 59px;
+}
+
+.simpleway-heading {
+    margin: 0;
+    margin-bottom: 20px;
+    width: 642px;
+    font-weight: 500;
+    font-size: 44.2px;
+    line-height: 52px;
+    color: #000000;
+}
+
+.simpleway-desc {
+    margin: 0;
+    margin-bottom: 31px;
+    width: 607px;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.01em;
+    color: #0F0101;
+    opacity: 0.7;
+}
+
+.simpleway-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.simpleway-item {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.simpleway-item-desc {
+    margin: 0;
+    margin-left: 10px;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.simpleway-item-active {
+    margin-top: 39px;
+}
+
+/* QUESTION-SECTION */
+
+.question {
+    padding-top: 150px;
+    padding-bottom: 71px;
+}
+
+.question-heading {
+    margin: 0;
+    margin: 0 auto;
+    margin-bottom: 36px;
+    width: 522px;
+    font-weight: 500;
+    text-align: center;
+    font-size: 44px;
+    line-height: 52px;
+    color: #000000;
+}
+
+.question-input-wrapper {
+    text-align: center;
+    margin-bottom: 37px;
+}
+
+.question-input {
+    padding-top: 29px;
+    padding-bottom: 29px;
+    padding-left: 25px;
+    width: 303px;
+    border: 1px solid #FFA3A3;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.select-question {
+    margin-left: 30px;
+    padding-top: 29px;
+    padding-bottom: 29px;
+    padding-left: 25px;
+    width: 303px;
+    background: #FFFFFF;
+    border: 1px solid #FFA3A3;
+    box-sizing: border-box;
+    border-radius: 5px;
+    appearance: none;
+    background-image: url(../images/menu.png);
+    background-repeat: no-repeat;
+    background-position: right 25px center;
+}
+
+.question-input-text {
+    width: 503px;
+}
+
+.question-input-btn {
+    padding: 24px 35px;
+    width: 134px;
+    border: 2px solid transparent;
+}
+
+/* FOOTER */
+
+.site-footer {
+    padding-top: 70px;
+    padding-bottom: 104px;
+    background-color: #0A0808;
+}
+
+/* FOOTER-LIST */
+
+.footer-list {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-desc {
+    margin: 0;
+    margin-bottom: 25px;
+    width: 207px;
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+
+.footer-desc-follow {
+    margin: 0;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+
+.footer-item-link {
+    text-decoration: none;
+}
+
+.footer-item-link:hover {
+    opacity: 0.8;
+}
+
+.footer-item-link:active {
+    opacity: 0.4;
+}
+
+.footer-item-link + .footer-item-link {
+    margin-left: 10px;
+}
+
+/* FOOTER-INNER-LIST */
+
+.footer-inner-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-inner-item + .footer-inner-item {
+    margin-top: 10px;
+}
+
+.footer-inner-link {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+
+.footer-inner-link:hover {
+    opacity: 0.8;
+}
+
+.footer-inner-link:active {
+    opacity: 0.4;
+}
+
+.footer-inner-link-active {
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.footer-item-drive {
+    margin-left: 47px;
+}
+
+.footer-item-second-drive {
+    margin-left: 132px;
+}
+
+.footer-item-third-drive {
+    margin-left: 150px;
+}
+
+.footer-inner-desc {
+    margin: 0;
+    margin-bottom: 13px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+}
+
+.footer-form {
+    margin-bottom: 15px;
+}
+
+.footer-input {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 32px;
+    width: 263px;
+    opacity: 0.5;
+    border: 3px solid #D64374;
+    color: white;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: #0A0808;
+}
+
+.footer-input::placeholder {
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+.footer-btn {
+    padding: 16px 18px;
+    width: 125px;
+    text-align: center;
+}
